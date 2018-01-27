@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-27 17:42+0100\n"
+"PO-Revision-Date: 2018-01-27 17:47+0100\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: models.py:32
+msgid "What is your age?"
+msgstr "Quel est votre âge?"
+
+#: models.py:36
+msgid "Female"
+msgstr "Femme"
+
+#: models.py:36
+msgid "Male"
+msgstr "Homme"
+
+#: models.py:37
+msgid "What is your gender?"
+msgstr "Quel est votre genre?"
+
+#: models.py:41 models.py:65 models.py:70
+msgid "No"
+msgstr "Non"
+
+#: models.py:41 models.py:65 models.py:70
+msgid "Yes"
+msgstr "Oui"
+
+#: models.py:42
+msgid "Are you a student?"
+msgstr "Etes-vous étudiant(e)?"
+
+#: models.py:46
+msgid "Bachelor"
+msgstr "Licence"
+
+#: models.py:46
+msgid "Master"
+msgstr "Master"
+
+#: models.py:47
+msgid "PhD"
+msgstr "Doctorat"
+
+#: models.py:47 models.py:60
+msgid "Not in the list"
+msgstr "Pas dans la liste"
+
+#: models.py:52
+msgid "Administration"
+msgstr "Administration"
+
+#: models.py:52
+msgid "Archeology"
+msgstr "Archéologie"
+
+#: models.py:52
+msgid "Biology"
+msgstr "Biologie"
+
+#: models.py:53
+msgid "Buisiness school"
+msgstr "Ecole de commerce"
+
+#: models.py:53
+msgid "Chemistry"
+msgstr "Chimie"
+
+#: models.py:54
+msgid "Computer science"
+msgstr "Informatique"
+
+#: models.py:54 tests.py:18
+msgid "Economics"
+msgstr "Economie"
+
+#: models.py:55
+msgid "Education"
+msgstr "Education"
+
+#: models.py:55
+msgid "Law"
+msgstr "Droite"
+
+#: models.py:55
+msgid "Management"
+msgstr "Gestion"
+
+#: models.py:56
+msgid "Nursing school"
+msgstr "Ecole d'infirmière"
+
+#: models.py:56
+msgid "Engineer"
+msgstr "Ecole d'ingénieur"
+
+#: models.py:56
+msgid "Geography"
+msgstr "Géographie"
+
+#: models.py:57
+msgid "History"
+msgstr "Histoire"
+
+#: models.py:57
+msgid "Lettres"
+msgstr "Lettres"
+
+#: models.py:57
+msgid "Mathematics"
+msgstr "Mathématiques"
+
+#: models.py:58
+msgid "Medicine"
+msgstr "Médecine"
+
+#: models.py:58
+msgid "Music"
+msgstr "Musique"
+
+#: models.py:58
+msgid "Pharmacy"
+msgstr "Pharmacie"
+
+#: models.py:59
+msgid "Philosophy"
+msgstr "Phylosophie"
+
+#: models.py:59
+msgid "Physics"
+msgstr "Physique"
+
+#: models.py:59
+msgid "Politics"
+msgstr "Sciences politiques"
+
+#: models.py:60
+msgid "Sociology"
+msgstr "Sociologie"
+
+#: models.py:60
+msgid "Sport"
+msgstr "Sport"
+
+#: models.py:62
+msgid "What are you studying?"
+msgstr "Quelle discipline étudiez-vous?"
+
+#: models.py:66
+msgid "Do you pratice (regularly) some sport?"
+msgstr "Pratiquez-vous régulièrement du sport?"
+
+#: models.py:71
+msgid "Have you ever participated in an experiment?"
+msgstr "Aviez-vous déjà participé à une expérience d'économie?"
+
+#: pages.py:15
+msgid ""
+"If you are a student you must select your level of study and the displine "
+"you are studying"
+msgstr ""
+"Si vous êtes étudiant(e) vous devez préciser votre niveau d'études et la "
+"discipline que vous étudiez"
+
+#: templates/demographics/Demographic.html:6
+msgid "Final questionnaire"
+msgstr "Questionnaire final"
+
+#: templates/demographics/Demographic.html:11
+msgid "The questionnaire below is anonymous, so please answer sincerely"
+msgstr ""
+"Le questionnaire ci-dessous est anonyme, merci d'y répondre avec sincérité"
+
+#: templates/demographics/End.html:9
+msgid "Please wait ..."
+msgstr "Veuillez patienter ..."
