@@ -2,7 +2,7 @@ from otree.api import (
     models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
     Currency as c, currency_range
 )
-from django.utils.translation import gettext
+from django.utils.translation import ugettext
 
 
 author = 'Dimitri DUBOIS'
@@ -29,44 +29,44 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     age = models.IntegerField(
-        label=gettext('What is your age?'),
+        label=ugettext('What is your age?'),
         min=13, max=125)
 
     gender = models.IntegerField(
-        choices=[(0, gettext('Female')), (1, gettext('Male'))],
-        label=gettext('What is your gender?'),
+        choices=[(0, ugettext('Female')), (1, ugettext('Male'))],
+        label=ugettext('What is your gender?'),
         widget=widgets.RadioSelectHorizontal)
 
     student = models.IntegerField(
-        choices=[(0, gettext('No')), (1, gettext('Yes'))],
-        label=gettext("Are you a student?"),
+        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
+        label=ugettext("Are you a student?"),
         widget=widgets.RadioSelectHorizontal)
 
     student_level = models.IntegerField(
-        choices=[(0, gettext('Bachelor')), (1, gettext('Master')),
-                 (3, gettext('PhD')), (4, gettext('Not in the list'))],
+        choices=[(0, ugettext('Bachelor')), (1, ugettext('Master')),
+                 (3, ugettext('PhD')), (4, ugettext('Not in the list'))],
         blank=True)
 
     student_discipline = models.StringField(
         choices=[
-            gettext("Administration"), gettext("Archeology"), gettext("Biology"),
-            gettext("Buisiness school"), gettext("Chemistry"),
-            gettext("Computer science"), gettext("Economics"),
-            gettext("Education"), gettext("Law"), gettext("Management"),
-            gettext("Nursing school"), gettext("Engineer"), gettext("Geography"),
-            gettext("History"), gettext("Lettres"), gettext("Mathematics"),
-            gettext("Medicine"), gettext("Music"), gettext("Pharmacy"),
-            gettext("Philosophy"), gettext("Physics"), gettext("Politics"),
-            gettext("Sociology"), gettext("Sport"), gettext("Not in the list")
+            ugettext("Administration"), ugettext("Archeology"), ugettext("Biology"),
+            ugettext("Buisiness school"), ugettext("Chemistry"),
+            ugettext("Computer science"), ugettext("Economics"),
+            ugettext("Education"), ugettext("Law"), ugettext("Management"),
+            ugettext("Nursing school"), ugettext("Engineer"), ugettext("Geography"),
+            ugettext("History"), ugettext("Lettres"), ugettext("Mathematics"),
+            ugettext("Medicine"), ugettext("Music"), ugettext("Pharmacy"),
+            ugettext("Philosophy"), ugettext("Physics"), ugettext("Politics"),
+            ugettext("Sociology"), ugettext("Sport"), ugettext("Not in the list")
         ],
-        label=gettext("What are you studying?"), blank=True)
+        label=ugettext("What are you studying?"), blank=True)
 
     sport = models.IntegerField(
-        choices=[(0, gettext('No')), (1, gettext('Yes'))],
-        label=gettext("Do you pratice (regularly) some sport?"),
+        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
+        label=ugettext("Do you pratice (regularly) some sport?"),
         widget=widgets.RadioSelectHorizontal)
 
     experience = models.IntegerField(
-        choices=[(0, gettext('No')), (1, gettext('Yes'))],
-        label=gettext("Have you ever participated in an experiment?"),
+        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
+        label=ugettext("Have you ever participated in an experiment?"),
         widget=widgets.RadioSelectHorizontal)
