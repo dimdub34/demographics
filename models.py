@@ -28,8 +28,51 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 
+    nationality = models.StringField(
+        label=ugettext("What nationality are you?"),
+        choices=[
+            'Afghan', 'Albanian', 'Algerian', 'American', 'Andorran', 'Angolan',
+            'Antiguans', 'Argentinean', 'Armenian', 'Australian', 'Austrian',
+            'Azerbaijani', 'Bahamian', 'Bahraini', 'Bangladeshi', 'Barbadian',
+            'Barbudans', 'Batswana', 'Belarusian', 'Belgian', 'Belizean',
+            'Beninese', 'Bhutanese', 'Bolivian', 'Bosnian', 'Brazilian',
+            'British', 'Bruneian', 'Bulgarian', 'Burkinabe', 'Burmese',
+            'Burundian', 'Cambodian', 'Cameroonian', 'Canadian', 'Cape Verdean',
+            'Central African', 'Chadian', 'Chilean', 'Chinese', 'Colombian',
+            'Comoran', 'Congolese', 'Costa Rican', 'Croatian', 'Cuban',
+            'Cypriot', 'Czech', 'Danish', 'Djibouti', 'Dominican', 'Dutch',
+            'East Timorese', 'Ecuadorean', 'Egyptian', 'Emirian',
+            'Equatorial Guinean', 'Eritrean', 'Estonian', 'Ethiopian',
+            'Fijian', 'Filipino', 'Finnish', 'French', 'Gabonese', 'Gambian',
+            'Georgian', 'German', 'Ghanaian', 'Greek', 'Grenadian', 'Guatemalan',
+            'Guinea-Bissauan', 'Guinean', 'Guyanese', 'Haitian', 'Herzegovinian',
+            'Honduran', 'Hungarian', 'I-Kiribati', 'Icelander', 'Indian',
+            'Indonesian', 'Iranian', 'Iraqi', 'Irish', 'Israeli', 'Italian',
+            'Ivorian', 'Jamaican', 'Japanese', 'Jordanian', 'Kazakhstani',
+            'Kenyan', 'Kittian and Nevisian', 'Kuwaiti', 'Kyrgyz', 'Laotian',
+            'Latvian', 'Lebanese', 'Liberian', 'Libyan', 'Liechtensteiner',
+            'Lithuanian', 'Luxembourger', 'Macedonian', 'Malagasy', 'Malawian',
+            'Malaysian', 'Maldivian', 'Malian', 'Maltese', 'Marshallese',
+            'Mauritanian', 'Mauritian', 'Mexican', 'Micronesian', 'Moldovan',
+            'Monacan', 'Mongolian', 'Moroccan', 'Mosotho', 'Motswana',
+            'Mozambican', 'Namibian', 'Nauruan', 'Nepalese', 'New Zealander',
+            'Ni-Vanuatu', 'Nicaraguan', 'Nigerian', 'Nigerien', 'North Korean',
+            'Northern Irish', 'Norwegian', 'Omani', 'Pakistani', 'Palauan',
+            'Panamanian', 'Papua New Guinean', 'Paraguayan', 'Peruvian',
+            'Polish', 'Portuguese', 'Qatari', 'Romanian', 'Russian', 'Rwandan',
+            'Saint Lucian', 'Salvadoran', 'Samoan', 'San Marinese', 'Sao Tomean',
+            'Saudi', 'Scottish', 'Senegalese', 'Serbian', 'Seychellois',
+            'Sierra Leonean', 'Singaporean', 'Slovakian', 'Slovenian',
+            'Solomon Islander', 'Somali', 'South African', 'South Korean',
+            'Spanish', 'Sri Lankan', 'Sudanese', 'Surinamer', 'Swazi', 'Swedish',
+            'Swiss', 'Syrian', 'Taiwanese', 'Tajik', 'Tanzanian', 'Thai',
+            'Togolese', 'Tongan', 'Trinidadian or Tobagonian', 'Tunisian',
+            'Turkish', 'Tuvaluan', 'Ugandan', 'Ukrainian', 'Uruguayan',
+            'Uzbekistani', 'Venezuelan', 'Vietnamese', 'Welsh', 'Yemenite',
+            'Zambian', 'Zimbabwean'])
+
     age = models.IntegerField(
-        label=ugettext('What is your age?'),
+        label=ugettext('How old are you?'),
         min=13, max=125)
 
     gender = models.IntegerField(
@@ -60,13 +103,3 @@ class Player(BasePlayer):
             ugettext("Sociology"), ugettext("Sport"), ugettext("Not in the list")
         ],
         label=ugettext("What are you studying?"), blank=True)
-
-    sport = models.IntegerField(
-        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
-        label=ugettext("Do you pratice (regularly) some sport?"),
-        widget=widgets.RadioSelectHorizontal)
-
-    experience = models.IntegerField(
-        choices=[(0, ugettext('No')), (1, ugettext('Yes'))],
-        label=ugettext("Have you ever participated in an experiment?"),
-        widget=widgets.RadioSelectHorizontal)
